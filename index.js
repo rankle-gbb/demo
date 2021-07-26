@@ -1,12 +1,8 @@
-var { app, BrowserWindow } = require("electron");
-
+const { app, BrowserWindow } = require("electron");
 let mainWindow = null;
 
 app.on("window-all-closed", function () {
-  if (process.platform != "darwin") {
-    app.quit();
-    console.log(process.versions["electron"]);
-  }
+  if (process.platform != "darwin") app.quit();
 });
 
 app.on("ready", function () {

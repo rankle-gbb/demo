@@ -1,15 +1,42 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Hello World!</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    We are using io.js 
-    and Electron
-    <button id="btn">获取pakcage.json</button>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+  <style>
 
+    .text {
+      color:red;
+    }
+    .tree {
+      cursor: pointer;
+      padding: 10px;
+      z-index: 10;
+    }
+    .content {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .fileContent {
+      display: flex;
+      justify-content: space-between;
+    }
+    .dirname {
+      font-size: 12px;
+    }
+    .time {
+      font-size: 12px;
+    }
+  </style>
+  <body>
+    <div class="content">
+      <div class="text">最近浏览文件</div>
     <div id="textarea"></div>
+    </div>
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
     <script src="./render/index.js"></script>
   </body>
